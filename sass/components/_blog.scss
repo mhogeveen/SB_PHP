@@ -1,0 +1,15 @@
+.blog {
+   display: flex;
+   flex-flow: wrap column;
+   height: fit-content;
+
+   &__meta {
+      text-align: center;
+      color: $clr-gray300;
+      margin: 0 0 1rem 0;
+   }
+
+   p {
+      font-size: 1.2rem;
+   }
+}

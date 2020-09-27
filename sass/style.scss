@@ -1,0 +1,64 @@
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// Import utils
+@import './utils/variables';
+
+// Import components
+@import './components/header';
+@import './components/footer';
+@import './components/main';
+@import './components/post-grid';
+@import './components/post-create';
+@import './components/post-card';
+@import './components/blog';
+
+// General styles
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Lato', sans-serif;
+   font-size: 12px;
+   line-height: 1.5em;
+   color: $clr-gray100;
+}
+
+.container {
+   width: 1024px;
+   margin: 0 auto;
+
+   @media (max-width: $bp-l) {
+      width: 100%;
+   }
+
+   &--inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+      gap: 20px;
+      padding: 0 32px;
+
+      @media (max-width: $bp-s) {
+         grid-template-columns: 1fr;
+      }
+   }
+}
+
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   height: 30px;
+   width: 200px;
+   border: none;
+   background-color: $clr-highlight;
+   border-radius: 15px;
+   color: $clr-light;
+   margin: auto auto 0 auto;
+   cursor: pointer;
+}
+
+.error-message {
+   text-align: center;
+}

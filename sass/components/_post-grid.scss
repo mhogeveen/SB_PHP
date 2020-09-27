@@ -1,0 +1,33 @@
+.post-grid {
+   display: flex;
+   flex-flow: wrap row;
+}
+
+.archive-pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin: 2rem 0 0 0;
+
+   .current {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 3rem;
+      background-color: $clr-bg;
+      border-radius: 1.5rem;
+   }
+
+   .page-numbers {
+      margin: 0 0.33rem;
+      text-decoration: none;
+      color: $clr-gray100;
+   }
+
+   .next,
+   .prev {
+      color: $clr-highlight;
+   }
+}
