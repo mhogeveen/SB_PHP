@@ -2,7 +2,7 @@
    display: grid;
    gap: 20px;
    padding: 40px;
-   min-height: calc(100vh - 282px);
+   min-height: calc(100vh - 362px);
    background-color: $clr-bg;
 
    &--home {
@@ -36,10 +36,11 @@
    }
 
    @media (max-width: $bp-xs) {
-      min-height: calc(100vh - 182px);
+      min-height: calc(100vh - 262px);
    }
 
    @media (max-width: $bp-xxs) {
       padding: 20px;
+      min-height: calc(100vh - 222px);
    }
 }
