@@ -24,6 +24,8 @@ function submit_post()
    $attachement_id = media_handle_upload('imageInput', $post_id);
    // Update thumbnail_id metadata to reflect attachement
    update_post_meta($post_id, '_thumbnail_id', $attachement_id);
+   // Set category term
+   wp_set_post_terms($post_id, $_POST['categoryInput'], 'category');
 
    if ($post_id) {
       wp_redirect(home_url());
